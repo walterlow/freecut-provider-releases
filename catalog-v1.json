@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.0.3",
+  "catalog_version": "1.0.4",
   "packages": [
     {
       "kind": "runtime",
@@ -9,7 +9,7 @@
       "description": "Shared CUDA 12.8 runtime for FreeCut inference providers.",
       "version": "12.8.61",
       "platform": "windows-x86_64",
-      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.3/freecut.cuda.windows-x86_64-12.8.61.zip",
+      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.4/freecut.cuda.windows-x86_64-12.8.61.zip",
       "archive_size": 578394051,
       "sha256": "80463202103d5b399975909589cdaf9f05c86e4ad9ccc24cf0b1a35a02974fa8",
       "runtime_dependencies": []
@@ -23,9 +23,28 @@
       "platform": "windows-x86_64",
       "engine": "moss_transcribe_diarize",
       "backend": "cuda",
-      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.3/freecut.stt.moss.cpp.cuda-0.2.1-win-x64.zip",
+      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.4/freecut.stt.moss.cpp.cuda-0.2.1-win-x64.zip",
       "archive_size": 42258449,
       "sha256": "5fa2702b81f6f83002c2bfa50ca4f47329b54de38a695de5bc97ffe4cfa65aaf",
+      "runtime_dependencies": [
+        {
+          "id": "freecut.cuda.windows-x86_64",
+          "version": "12.8.61"
+        }
+      ]
+    },
+    {
+      "kind": "stt_provider",
+      "id": "freecut.stt.whisper.cpp.cuda",
+      "name": "Whisper.cpp CUDA",
+      "description": "NVIDIA CUDA speech-to-text with explicit CPU fallback and timestamps.",
+      "version": "0.1.0",
+      "platform": "windows-x86_64",
+      "engine": "whisper",
+      "backend": "cuda",
+      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.4/freecut.stt.whisper.cpp.cuda-0.1.0-win-x64.zip",
+      "archive_size": 20888079,
+      "sha256": "32b54ef4952d3c78de582ce6c9323e6f75541b844c135ea3096154645dbab8e6",
       "runtime_dependencies": [
         {
           "id": "freecut.cuda.windows-x86_64",
@@ -42,7 +61,7 @@
       "platform": "windows-x86_64",
       "engine": "whisper",
       "backend": "vulkan",
-      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.3/freecut.stt.whisper.cpp.vulkan-0.1.0-win-x64.zip",
+      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.4/freecut.stt.whisper.cpp.vulkan-0.1.0-win-x64.zip",
       "archive_size": 18721264,
       "sha256": "4f023f69caaad36642a2c4b921ec1410a6cc7939f316559808b6e8a5c08071a0",
       "runtime_dependencies": []
