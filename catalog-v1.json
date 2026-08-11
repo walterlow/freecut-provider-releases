@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "catalog_version": "1.0.1",
+  "catalog_version": "1.0.2",
   "packages": [
     {
       "kind": "runtime",
@@ -9,7 +9,7 @@
       "description": "Shared CUDA 12.8 runtime for FreeCut inference providers.",
       "version": "12.8.61",
       "platform": "windows-x86_64",
-      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.1/freecut.cuda.windows-x86_64-12.8.61.zip",
+      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.2/freecut.cuda.windows-x86_64-12.8.61.zip",
       "archive_size": 578394051,
       "sha256": "80463202103d5b399975909589cdaf9f05c86e4ad9ccc24cf0b1a35a02974fa8",
       "runtime_dependencies": []
@@ -23,7 +23,7 @@
       "platform": "windows-x86_64",
       "engine": "moss_transcribe_diarize",
       "backend": "cuda",
-      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.1/freecut.stt.moss.cpp.cuda-0.2.0-win-x64.zip",
+      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.2/freecut.stt.moss.cpp.cuda-0.2.0-win-x64.zip",
       "archive_size": 42259469,
       "sha256": "5754956f251d2dd2b84513d347d152ef0506915eac2ddaf1a3e453a0c3b4f1f7",
       "runtime_dependencies": [
@@ -32,6 +32,20 @@
           "version": "12.8.61"
         }
       ]
+    },
+    {
+      "kind": "stt_provider",
+      "id": "freecut.stt.whisper.cpp.vulkan",
+      "name": "Whisper.cpp Vulkan",
+      "description": "Cross-vendor Vulkan speech-to-text with CPU fallback and timestamps.",
+      "version": "0.1.0",
+      "platform": "windows-x86_64",
+      "engine": "whisper",
+      "backend": "vulkan",
+      "download_url": "https://github.com/walterlow/freecut-provider-releases/releases/download/catalog-v1.0.2/freecut.stt.whisper.cpp.vulkan-0.1.0-win-x64.zip",
+      "archive_size": 18721264,
+      "sha256": "4f023f69caaad36642a2c4b921ec1410a6cc7939f316559808b6e8a5c08071a0",
+      "runtime_dependencies": []
     }
   ]
 }
